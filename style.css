@@ -1,0 +1,38 @@
+:root{
+    --base-colour: hsl(311, 86%, 86%);
+    --text-colour: #e83597;
+    --text-colour-2: #9c1860;
+    --header-colour: #ed66be;
+    --colour-1: #f0c0c0;
+    --colour-2: #ffd6a5;
+    --colour-3: #fdffb6;
+    --colour-4: #caffbf;
+    --colour-5: #9bf6ff;
+    --colour-6: #a0c4ff;
+    --colour-7: #e9eaeb;
+    --colour-8: #8f8d8d;
+    --white: #ffffff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-colour);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-colour);
+}
+
+header {
+    padding: 1em;
+    background-color: var(--header-colour);
+    color: var(--colour-3);
+}
