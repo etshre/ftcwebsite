@@ -3,6 +3,7 @@
     --text-colour: #e83597;
     --text-colour-2: #9c1860;
     --header-colour: #ed66be;
+    --background: #ffe8f5;
     --colour-1: #f0c0c0;
     --colour-2: #ffd6a5;
     --colour-3: #fdffb6;
@@ -28,11 +29,12 @@ html {
 
 body {
     padding: 1em;
-    background-color: var(--base-colour);
+    background-color: var(--background);
 }
 
-header {
+.top {
     padding: 1em;
     background-color: var(--header-colour);
     color: var(--colour-3);
+    
 }
