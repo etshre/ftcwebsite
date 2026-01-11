@@ -274,7 +274,6 @@ span.no_selection {
 .main-name {
     font-size: 2rem;
     color: #3c3c3c;
-    font-family: 'MinecraftTen' !important;
     display: none;
 }
 

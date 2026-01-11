@@ -127,6 +127,7 @@ function fetchAllPartials() {
     fetchPartial("../guides-fork-stuff/loader.html", "loaderHtml"),
   ])
     .then(([navbarHtml, sidebarHtml, footerHtml, loaderHtml]) => {
+      console.log(navbarHtml);
       document.querySelector(".top").innerHTML = navbarHtml;
       document.getElementById("sidebar").innerHTML = sidebarHtml;
       document.getElementById("footer").innerHTML = footerHtml;
