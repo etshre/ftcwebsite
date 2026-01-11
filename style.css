@@ -32,9 +32,89 @@ body {
     background-color: var(--background);
 }
 
+h1 {
+    font-weight: bold;
+}
+
 .top {
-    padding: 1em;
-    background-color: var(--header-colour);
     color: var(--colour-3);
-    
+    position: sticky;
+    top: 0;
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--colour-1);
+    padding: min(0.5em, 15%);
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(100000px, 100%);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    font-weight: bold;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.top nav a{
+    text-decoration: none;
+}
+
+.top nav a:hover{
+    text-decoration: underline;
+}
+
+section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    padding: min(0.5em, 15%);
+    border-radius: 1em;
+    background-color: var(--white);
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding-left: 1em;
+    padding: min(0.5em, 5%);
+}
+
+.text-container{
+    flex: 0 1 34em;
+    padding: min(0.2em, 5%);
+}
+
+@media(max-width: 988px){
+    header {
+        text-align: center;
+    }
+    header .text-container{
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 640px){
+    nav li {
+        display: none;
+    }
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+    header {
+        margin-top: 0;
+    }
 }
